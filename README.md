@@ -158,7 +158,14 @@ If the run completes cleanly with no warnings or errors, no `error.log` will be 
 
 ---
 
-## Planned Improvements
+## Suggested Improvements
 
-- Master + per-stage progress bars
-- GitHub Actions / CI integration for automated verification workflows
+This script was built for a specific use case. I needed something that could quickly compare two drives for a work project. This repo will likely see no movement. But, I wanted to share it to potentially save other's some time. If I were to improve this script, I'd do the following:
+
+- Improve progress in the console with a Master base + per-stage progress bars
+- Build a secondary clean up / remedy script to move missing files to your target path
+- Add deeper searching that checks for old vs new files and identifies similar files in different paths
+
+## NOTICE
+
+As stated above, this was written with Claude. I needed to quickly build a script to check if my data migration from a failing drive was successful. Please read through the code before you execute and make sure you are comfortable with its permissions. This script is not designed to write or delete any data from either target path. It should only write .tmp, .csv, and .log files to the path its exeucted in.
